@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREDOCTOR</title>
+    <link rel="stylesheet" href="../static/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="../static/Group 1.svg">
+        </div>
+        <div class="navbar-name">
+            <h1>PRE-DOCTOR</h1>
+        </div>
+    </div>
+    <!-- <form action='/predict' method="post"></form> -->
+    <div class="diabetes-page">
+        <div class="video-background">
+            <video autoplay muted loop id="video-bg">
+              <source src="../static/video4.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <div class="diabetes-text">
+            <p> Let <span> AI </span> Predict your Health Conditions ,<br> So that <span> YOU</span> can take Extra
+                Precautions </p>
+            <img src="../static/home.png">
+        </div>
+
+        
+            <div class="diabetes">
+                <h1 class="heading">DIABETES DETECTOR</h1>
+                <br>
+                <div class="diabetes-patient-name">
+
+                    <input type="text" class="input-box-1" placeholder="Your Name">
+                </div>
+            </div>
+            <form action='/predict' method="post">
+            <div class="diabetes-symtomps">
+                <div class="symtomp-1">
+                    <p>Pregnancies</p>
+                    <input type="float" class="input-box" name="ss1">
+                </div>
+                <div class="symtomp-2">
+                    <p>Glucose</p>
+                    <input type="float" class="input-box" name="ss2">
+                </div>
+                <div class="symtomp-3">
+                    <p>Blood Pressure</p>
+                    <input type="float" class="input-box" name="ss3">
+                </div>
+                <div class="symtomp-4">
+                    <p>Skin Thickness</p>
+                    <input type="float" class="input-box" name="ss4">
+                </div>
+                <div class="symtomp-5">
+                    <p>Insulin</p>
+                    <input type="float" class="input-box" name="ss5">
+                </div>
+                <div class="symtomp-6">
+                    <p>BMI</p>
+                    <input type="float" class="input-box" name="ss6">
+                </div>
+                <div class="symtomp-7">
+                    <p>Diabetes Pedegree Function</p>
+                    <input type="float" class="input-box" name="ss7">
+                </div>
+                <div class="symtomp-8">
+                    <p>Age</p>
+                    <input type="float" class="input-box" name="ss8">
+                </div>
+                <div class="diabetes-symtomps-results">
+                    <div class="button">
+
+
+                        <input type='submit' class="btn1" value='Show Results'>
+                    </div>
+                    <div class="logo">
+                        <img src="../static/Group 176.svg">
+                    </div>
+                    <div class="download">
+                        <button class="btn2">Download Report</button>
+                    </div>
+                </div>
+                <div style="display: flex; width: 100%; justify-content: center;">
+                    <div class="predict1">
+                        Prediction :
+
+                    </div>
+                    <div class="predict1">
+                        {{result}}
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    </div>
+
+    </div>
+    <div class="checkdown">
+        <div class="time1">
+            <div class="time-heading">
+                <p>Set Reminder For your Next Doctor <br>
+                    Appointment / Medication</p>
+            </div>
+            <div class="timer-table">
+                <p>SET DATE and TIME </p>
+                <input type="date" id="date">
+            </div>
+
+            <div class="timer-table">
+                <input type="time" id="time">
+            </div>
+            <div class="timer-buttons">
+                <button id="calculate">Calculate</button>
+                <button id="stop">Stop</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+        <div class="line">
+                
+        </div>
+        
+        <div class="countdown">
+            <div class="countdown-heading">
+                <p>COUNTDOWN</p>
+            </div>
+            <div class="countdown-timer">
+                <div>
+                    <p class="heading">DAY</p><br>
+                    <div class="time" id="countdown-days"></div>
+                </div>
+                <div>
+                    <p class="heading">HOURS</p><br>
+                    <div class="time" id="countdown-hours"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="line2">
+
+    </div>
+    <div class="accuracy">
+        <div class="accuracy-text">
+           <p>  PRE-DOCTOR predicts your HEALTH <br>
+             with <span>87% Accuracy !</span> <br>
+             Just by Knowing your Health Parameters 
+             </p>
+        </div>
+        <div class="accuracy-image">
+           <img src="../static/Vector.svg">
+        </div>
+    </div>
+    <div class="line3">
+
+    </div>
+    <div class="downloadpart">
+        <div class="downloadpart-text">
+           <p>
+            <span>Download</span> your Health Report Instantly ! <br>
+            PRE-DOCTOR , Making your Health <br>
+             and Life Better 
+           </p>
+        </div>
+        <div class="downloadpart-image">
+          <img src="../static/Vector (1).svg">
+        </div>
+    </div>
+    <div class="line4">
+
+    </div>
+    <div class="reminder">
+        <div class="reminder-text">
+           <p> Set <span> REMINDERS !</span>  so That You Never <br>
+            Miss out on your Checkup 
+        </p>
+        </div>
+        <div class="reminder-image">
+         <img src="../static/Group 120.svg">
+        </div>
+    </div>
+    <div class="line5">
+        
+    </div>
+
+    <div class="container" style="margin-top: 200px;">    
+        <form>    
+          <div class="row">    
+            <div class="col-25">    
+                  
+            </div>    
+            <div class="col-75">    
+              <input type="number" id="fname" name="firstname" placeholder="Your name..">    
+            </div>    
+          </div>    
+          <div class="row">    
+            <div class="col-25">    
+              
+            </div>    
+            <div class="col-75">    
+              <input type="number" id="lname" name="lastname" placeholder="Your last name..">    
+            </div>    
+          </div>    
+          <div class="row">    
+              <div class="col-25">    
+                    
+              </div>    
+              <div class="col-75">    
+                <input type="email" id="email" name="mailid" placeholder="Your mail id..">    
+              </div>    
+            </div>    
+          <div class="row">    
+            <div class="col-25">    
+               
+            </div>    
+            
+          </div>    
+          <div class="row">    
+            <div class="col-25">       
+            </div>    
+            <div class="col-75">    
+              <textarea id="subject" name="subject" placeholder="DROP YOUR FEEDBACK" style="height:200px"></textarea>    
+            </div>    
+          </div>    
+          <div class="row">    
+            <input type="submit" value="Submit" style="margin-left: 300px;">    
+          </div>    
+        </form>    
+      </div>
+
+    <script>
+        const resultShow = document.getElementsByClassName('predict1')[1];
+        console.log(resultShow.innerHTML);
+        if (resultShow.innerHTML.includes("1")) {
+            resultShow.innerHTML = "Diabetes is suspected";
+        }
+        else if (resultShow.innerHTML.includes("0")) {
+            resultShow.innerHTML = "Diabetes is not being suspected";
+        }
+        else {
+            resultShow.innerHTML = " ";
+        }
+
+
+    
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const downloadReportBtn = document.getElementById('downloadReportBtn');
+
+            downloadReportBtn.addEventListener('click', function (event) {
+                event.preventDefault();  // Prevent the default form submission behavior
+
+                // Simulate processing and get fake result
+                const fakeResult = Math.random() < 0.5 ? "Diabetes is suspected" : "Diabetes is not being suspected";
+
+                // Update the displayed result
+                const resultShow = document.querySelector('.predict1');
+                resultShow.textContent = "Prediction: " + fakeResult;
+
+                // Create a div to hold the input data and health report
+                const inputDiv = document.createElement('div');
+                inputDiv.className = 'input-data';
+
+                // Iterate through the form elements and append their values to the inputDiv
+                const formElements = document.querySelectorAll('.input-box');
+                formElements.forEach(function (element) {
+                    const label = element.previousElementSibling.innerText;
+                    const value = element.value;
+
+                    const inputLine = document.createElement('p');
+                    inputLine.textContent = `${label}: ${value}`;
+                    inputDiv.appendChild(inputLine);
+                });
+
+                // Create a div to hold the health report
+                const reportDiv = document.createElement('div');
+                reportDiv.className = 'health-report';
+                reportDiv.innerHTML = `
+                    <div style="text-align: center; margin-bottom: 20px;">
+                        <h1 style="color: #4CAF50; font-size: 24px; margin-bottom: 5px;">PREDOCTOR Health Report</h1>
+                        <p style="color: #555; font-size: 16px;">Patient Name: Your Name</p>
+                    </div>
+                    ${inputDiv.outerHTML}
+                    <div style="margin-top: 20px; text-align: center;">
+                        <p style="color: #333; font-size: 18px; font-weight: bold; margin-bottom: 10px;">${resultShow.textContent}</p>
+                        <p style="color: #777; font-size: 14px;">Thank you for using PREDOCTOR Health Prediction Service.</p>
+                    </div>
+                `;
+
+                // Generate PDF with health report layout
+                html2pdf(reportDiv, {
+                    margin: 10,
+                    filename: 'health_report.pdf',
+                    image: { type: 'jpeg', quality: 0.98 },
+                    html2canvas: { scale: 2 },
+                    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+                });
+            });
+        });
+
+        window.onload = () => {
+    document.querySelector('#calculate').onclick = calculate;
+    document.querySelector('#reset').onclick = reset;
+}
+
+function calculate () {
+    const date = document.querySelector("#date").value;
+    const time = document.querySelector("#time").value;
+
+    const stop = document.querySelector('#stop');
+    
+    const endTime = new Date(date + " " + time);
+
+    const interval = setInterval(() => calculateTime(endTime), 1000);
+
+    stop.addEventListener('click', () => {
+        clearInterval(interval);
+    })
+}
+
+function calculateTime(endTime) {
+    const currentTime = new Date();
+
+    const days = document.querySelector('#countdown-days');
+    const hours = document.querySelector('#countdown-hours');
+    const minutes = document.querySelector('#countdown-minutes');
+    const seconds = document.querySelector('#countdown-seconds');
+
+    if (endTime > currentTime) {
+        const timeLeft = (endTime - currentTime) / 1000;
+
+        console.log(timeLeft);
+        days.innerText = Math.floor(timeLeft / (24 * 60 * 60));
+        hours.innerText = Math.floor((timeLeft / (60 * 60)) % 24);
+    } else {
+        days.innerText = 0
+        hours.innerText = 0
+    }
+}
+
+function reset() {
+    document.querySelector('#countdown-days').innerText = 0;
+    document.querySelector('#countdown-hours').innerText = 0;
+}
+    </script>
+
+</body>
+
+</html>
